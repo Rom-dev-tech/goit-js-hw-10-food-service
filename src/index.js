@@ -1,9 +1,8 @@
 import './sass/main.scss';
-import isChangeTheme from './js/isChangeTheme';
+import onCheckboxClick from './js/isChangeTheme';
 
 // Refs
-const checkBox = document.querySelector('#theme-switch-toggle');
+import refs from './js/refs';
 
 // Слушатели
-checkBox.addEventListener('change', isChangeTheme)
-
+refs.checkBox.addEventListener('change', onCheckboxClick);
