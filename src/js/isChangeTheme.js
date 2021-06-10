@@ -26,6 +26,8 @@ function savedThemeOnReloaded() {
 
   if (savedValue) {
     refs.body.classList.add(savedValue);
+  } else {
+    refs.body.classList.add(Theme.LIGHT);
   }
 
   if (savedValue === Theme.DARK) {
