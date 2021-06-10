@@ -11,10 +11,10 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"DcDH":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=r;var e=t(require("../templates/food-service-menu.hbs"));function t(e){return e&&e.__esModule?e:{default:e}}function r(t){return(0,e.default)(t)}
 },{"../templates/food-service-menu.hbs":"WSxS"}],"pgCZ":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=a;var e=t(require("./refs"));function t(e){return e&&e.__esModule?e:{default:e}}const s={LIGHT:"light-theme",DARK:"dark-theme"},d="theme";function a(t){let a="";t.currentTarget.checked?(a=s.DARK,e.default.body.classList.add(a),e.default.body.classList.remove(s.LIGHT)):(a=s.LIGHT,e.default.body.classList.remove(s.DARK),e.default.body.classList.add(a)),localStorage.setItem(d,a)}function l(){const t=localStorage.getItem(d);t&&e.default.body.classList.add(t),t===s.DARK&&e.default.checkBox.setAttribute("checked",!0)}l();
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=a;var e=t(require("./refs"));function t(e){return e&&e.__esModule?e:{default:e}}const d={LIGHT:"light-theme",DARK:"dark-theme"},s="theme";function a(t){let a="";t.currentTarget.checked?(a=d.DARK,e.default.body.classList.add(a),e.default.body.classList.remove(d.LIGHT)):(a=d.LIGHT,e.default.body.classList.remove(d.DARK),e.default.body.classList.add(a)),localStorage.setItem(s,a)}function l(){const t=localStorage.getItem(s);t?e.default.body.classList.add(t):e.default.body.classList.add(d.LIGHT),t===d.DARK&&e.default.checkBox.setAttribute("checked",!0)}l();
 },{"./refs":"VyiV"}],"clu1":[function(require,module,exports) {
 
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=n(require("./js/refs")),r=n(require("./js/menu.json")),s=n(require("./js/createFoodMenuMarkup")),u=n(require("./js/isChangeTheme"));function n(e){return e&&e.__esModule?e:{default:e}}require("./sass/main.scss");const t=(0,s.default)(r.default);e.default.menuContainer.insertAdjacentHTML("beforeend",t),e.default.checkBox.addEventListener("change",u.default);
 },{"./js/refs":"VyiV","./js/menu.json":"NkM5","./js/createFoodMenuMarkup":"DcDH","./js/isChangeTheme":"pgCZ","./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.0e888119.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.2d056e9e.js.map
