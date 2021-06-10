@@ -5,6 +5,8 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
+const STORAGE_KEY = 'theme';
+
 export default function onCheckboxClick(evt) {
   let value = '';
   if (evt.currentTarget.checked) {
@@ -16,11 +18,11 @@ export default function onCheckboxClick(evt) {
     refs.body.classList.remove(Theme.DARK);
     refs.body.classList.add(value);
   }
-  localStorage.setItem('theme', value);
+  localStorage.setItem(STORAGE_KEY, value);
 }
 
 function savedThemeOnReloaded() {
-  const savedValue = localStorage.getItem('theme');
+  const savedValue = localStorage.getItem(STORAGE_KEY);
 
   if (savedValue) {
     refs.body.classList.add(savedValue);
