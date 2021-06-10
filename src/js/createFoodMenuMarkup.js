@@ -1,7 +1,5 @@
-import foodMenu from './menu.json'
-import foodServiceTpl from '../templates/food-service.hbs';
-
+import foodServiceTpl from '../templates/food-service-menu.hbs';
 
 export default function createFoodMenuMarkup(foodMenu) {
-   return foodMenu.map(foodServiceTpl).join('');
+   return foodServiceTpl(foodMenu);
 }

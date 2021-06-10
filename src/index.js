@@ -1,6 +1,6 @@
 import refs from './js/refs';
-import createFoodMenuMarkup from './js/createFoodMenuMarkup';
 import foodMenu from './js/menu.json'
+import createFoodMenuMarkup from './js/createFoodMenuMarkup';
 import onCheckboxClick from './js/isChangeTheme';
 import './sass/main.scss';
 
