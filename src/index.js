@@ -4,9 +4,9 @@ import createFoodMenuMarkup from './js/createFoodMenuMarkup';
 import onCheckboxClick from './js/isChangeTheme';
 import './sass/main.scss';
 
-// Разметка
+// Markup
 const menuMarkup = createFoodMenuMarkup(foodMenu)
 refs.menuContainer.insertAdjacentHTML('beforeend', menuMarkup)
 
-// Слушатели
+// Listener
 refs.checkBox.addEventListener('change', onCheckboxClick);
